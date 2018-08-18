@@ -1,12 +1,54 @@
 
 @media only screen and (max-width: 1200px) {
+    nav .menu li a {
+        width: 100px;
+        font-size: 14px;
+    }
+    nav .menu li a:before, a:after {
+        width: 60px; height: 60px;
+    }
+    nav .phone {
+        font-size: 16px;
+    }
 
+
+
+    .services .wrap .pic {
+        width: 410px; height: 250px;
+    }
+    /*small carousel*/
+    .services .wrap .carousel {
+        width: 410px; height: 257px;
+    }
+    .services .wrap.in-right .txt {
+        margin-top: -20px;
+    }
+    .services .txt li {
+        font-size: 14px;
+    }
+    .services .wrap.in-right .txt li br {
+        display: inline;
+    }
+
+
+
+    .add-services .wrap .pic {
+        height: 180px;
+    }
+    .add-services .wrap .pic-bg {
+        width: 210px; height: 240px;
+    }
+
+
+
+    footer .alex h3 {
+        margin-left: -100px;
+    }
 }
 
 
 
 @media only screen and (max-width: 992px) {
-
 }
 
 

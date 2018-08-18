@@ -284,11 +284,16 @@ header .wrap h1 {
 .services .txt p {
     margin: 0;
 }
+.services .txt ul {
+    padding: 0;
+}
 .services .txt li {
+    margin-top: 5px;
     padding-left: 25px;
     position: relative;
 }
 .services .wrap.in-right .txt li {
+    margin-top: 10px;
     margin-right: 40px;
     padding-left: 0;
     padding-right: 25px;
@@ -301,8 +306,8 @@ header .wrap h1 {
     color: #FFD700;
 }
 .services .wrap.in-right .txt i {
-    position: absolute; top: 50%; right: 0;
-    transform: translateY(-50%);
+    position: absolute; top: 30%; right: 0;
+    /*transform: translateY(-100%);*/
 }
 
 
@@ -387,6 +392,9 @@ header .wrap h1 {
     width: 400px;
     position: relative;
     z-index: 10;
+}
+.about .txt h3 {
+    font-size: 28px;
 }
 .about .wrap-background {
     background: #eee;
