@@ -19,14 +19,12 @@ a:hover {
     color: #000;
     text-decoration: none;
 }
-.hidden {
-    display: none;
-}
 .logo {
-    background: url("../img/logo.png");
+    background: url("../img/logo.png") no-repeat;
+    background-size: contain;
     width: 105px; height: 26px;
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 28px;
     cursor: pointer;
 }
 
@@ -36,6 +34,7 @@ a:hover {
 nav {
     background: #fff;
     position: fixed; top: 0; left: 0; right: 0;
+    height: 79px;
     z-index: 100;
     color: #fff;
     transition: 0.2s;
@@ -60,7 +59,8 @@ nav .logo.black {
     position: absolute;
 }
 nav .logo.white {
-    background: url("../img/logo_white.png");
+    background: url("../img/logo_white.png") no-repeat;
+    background-size: contain;
     opacity: 0;
     position: absolute;
 }
@@ -74,9 +74,12 @@ nav.scrolled .logo.white {
 
 nav .menu {
     text-align: center;
-    display: inline-block;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    transition: 0.3s;
+}
+nav .menu.hidden {
+    display: block;
 }
 nav .menu li {
     display: inline-block;
@@ -132,7 +135,7 @@ nav.scrolled .menu li a:hover {
     color: #000;
 }
 nav .phone {
-    display: block;
+    display: inline-block;
     margin-top: 30px;
     color: #000;
     font: 18px 'RobotoSlabRegular';
@@ -145,6 +148,22 @@ nav .phone:hover, nav.scrolled .phone:hover {
     color: #FFD700;
     transform: scale(1.1, 1.1);
 }
+.burger {
+    display: inline-block;
+    color: #000;
+    font-size: 22px;
+    padding: 7px 10px;
+    border: 1px #000 solid;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+nav.scrolled .burger {
+    color: #fff;
+    border: 1px #fff solid;
+}
+/*.burger:hover {*/
+    /*background: #FFD700;*/
+/*}*/
 
 
 
@@ -176,10 +195,11 @@ header .wrap h2{
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     text-transform: none;
+    font-size: 40px;
 }
 header .wrap h1 {
     color: #fff;
-    font: 40px 'RobotoSlabBold';
+    font: 36px 'RobotoSlabBold';
     text-transform: uppercase;
     text-shadow: 1px 1px 1px #000;
 }
@@ -193,7 +213,7 @@ header .wrap h1 {
     background: #eee;
 }
 .services .wrap {
-    margin: 30px auto;
+    margin: 60px auto 0;
     opacity: 0;
 }
 .services .wrap .pic {
@@ -217,12 +237,19 @@ header .wrap h1 {
     border: 3px #FFD700 solid;
     box-shadow: rgba(0, 0, 0, 0.2) 3px 0 15px;
 }
+.services .wrap.in-right .carousel {
+    float: right;
+}
 .slick-prev:before, .slick-next:before {
     color: #FFD700;
     transition: 0.2s;
 }
 .slick-prev, .slick-next {
     transform: scale(1.3,1.3);
+    transition: 0.2s;
+}
+.slick-prev:hover, .slick-next:hover {
+    transform: scale(1.5,1.5);
 }
 .slick-prev {
     left: -30px;
@@ -231,7 +258,7 @@ header .wrap h1 {
     right: -30px;
 }
 
-/*big carousel*/
+/*large carousel*/
 .services .container-fluid .carousel {
     width: 50%; height: auto;
     position: fixed; top: 50%; left: 50%;
@@ -272,10 +299,11 @@ header .wrap h1 {
 .services .wrap.in-right {
     text-align: right;
 }
-.services .wrap.in-left .txt {
+.services .wrap .txt {
     margin-left: 40px;
 }
 .services .wrap.in-right .txt {
+    margin-left: 0;
     margin-right: 40px;
 }
 .services .txt h3 {
@@ -324,12 +352,13 @@ header .wrap h1 {
 }
 .add-services .wrap {
     width: 100%;
+    opacity: 0;
 }
 .add-services .wrap .pic {
     display: inline-block;
     position: relative;
     width: 100%; height: 200px;
-    background: url("../img/add_services/add_serv1.jpg");
+    background: url("../img/add_services/add_serv1.jpg") no-repeat;
     background-size: cover;
     border: 3px solid #fff;
     border-radius: 5px;
@@ -343,11 +372,11 @@ header .wrap h1 {
     z-index: -1;
 }
 .add-services .col-lg-4:nth-child(3) .pic {
-    background: url("../img/add_services/add_serv2.jpg");
+    background: url("../img/add_services/add_serv2.jpg") no-repeat;
     background-size: cover;
 }
 .add-services .col-lg-4:nth-child(4) .pic {
-    background: url("../img/add_services/add_serv3.jpg");
+    background: url("../img/add_services/add_serv3.jpg") no-repeat;
     background-size: cover;
 }
 .add-services h3 {
@@ -367,20 +396,6 @@ header .wrap h1 {
     border-bottom: #FFD700 3px solid;
     overflow: hidden;
 }
-/*.about h2 {*/
-    /*text-align: center;*/
-    /*font: 36px "RobotoSlabRegular";*/
-    /*width: 100%;*/
-    /*margin: 40px 0 40px;*/
-    /*z-index: 10;*/
-/*}*/
-/*.about .wrap {*/
-    /*padding: 40px 0 70px;*/
-    /*width: 100%; height: 650px;*/
-    /*background: url("../img/header_bg1.jpg") no-repeat center center fixed;*/
-    /*background-size: cover;*/
-    /*overflow: hidden;*/
-/*}*/
 .about .photo {
     width: 600px; height: 900px;
     background: url("../img/about_olga.png");
@@ -438,22 +453,22 @@ header .wrap h1 {
 .stats .scene:hover .card-front {
     transform: scale(1.2,1.2);
 }
-.stats .col-lg-3:nth-child(1) .card-front {
+.stats .col-md-3:nth-child(1) .card-front {
     margin-top: 15px;
     background: url("../img/statistics/main-thin.png") no-repeat;
     background-size: contain;
 }
-.stats .col-lg-3:nth-child(2) .card-front {
+.stats .col-md-3:nth-child(2) .card-front {
     margin-top: 10px;
     background: url("../img/statistics/wedding-thin-icon.png") no-repeat;
     background-size: contain;
 }
-.stats .col-lg-3:nth-child(3) .card-front {
+.stats .col-md-3:nth-child(3) .card-front {
     margin-top: 10px;
     background: url("../img/statistics/birth-thin-icon.png") no-repeat;
     background-size: contain;
 }
-.stats .col-lg-3:nth-child(4) .card-front {
+.stats .col-md-3:nth-child(4) .card-front {
     margin-top: 15px;
     background: url("../img/statistics/corporate-thin-icon.png") no-repeat;
     background-size: contain;
@@ -461,7 +476,7 @@ header .wrap h1 {
 .stats .card .card-back {
     padding-top: 20px;
     background: #efefef;
-    transform: rotateY(180deg);
+    /*transform: rotateY(180deg);*/
     text-align: center;
     vertical-align: 50%;
     font: 20px "RobotoSlabRegular";
@@ -513,6 +528,7 @@ footer {
     background: #000;
 }
 footer .logo {
+    display: block;
     background: url("../img/logo_ai.png") no-repeat;
     background-size: contain;
     width: 100%; height: 100%;
@@ -520,6 +536,7 @@ footer .logo {
     cursor: auto;
 }
 footer .wrap {
+    display: block;
     width: fit-content;
     padding: 10px 60px 10px 30px;
 }
@@ -574,6 +591,12 @@ footer i:hover {
 
 
 
+.hidden {
+    display: none;
+}
+.hidden-lg {
+    display: none;
+}
 @-webkit-keyframes fadeInLeft {
     from {
         opacity:0;

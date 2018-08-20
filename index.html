@@ -19,12 +19,12 @@
     <nav id="nav">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
                     <div data-scroll-to="#header" class="logo white"></div>
                     <div data-scroll-to="#header" class="logo black"></div>
                 </div>
-                <div class="col-lg-8">
-                    <ul class="menu">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 order-md-2 order-lg-1">
+                    <ul class="menu hidden">
                         <li><a data-scroll-to="#services">Список услуг</a></li>
                         <li><a data-scroll-to="#about-olga">Ольга</a></li>
                         <li><a data-scroll-to="#about-alex">Александр</a></li>
@@ -32,8 +32,9 @@
                         <li><a data-scroll-to="#footer">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-xs-9 offset-sm-6 col-sm-6 offset-md-4 col-md-5 offset-lg-0 col-lg-2 order-md-1 order-lg-2 phone-and-burger">
                     <a class="phone" href="tel:">+8 800 555 3535</a>
+                    <i class="fas fa-bars burger hidden-lg"></i>
                 </div>
             </div>
         </div>
@@ -42,10 +43,10 @@
     <header id="header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="wrap">
                         <h2>Ольга и Александр <br><strong>Сиржук</strong></h2>
-                        <h1>Проведение мероприятий <br> в городе Николаеве</h1>
+                        <h1>Проведение торжественных <br> мероприятий <br> в городе Николаеве</h1>
                     </div>
                 </div>
             </div>
@@ -55,9 +56,10 @@
     <div id="services" class="services">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xs-12 col-sm-12 col-md-12">
                     <h2>Наши услуги: </h2>
                     <div id="wedding-service" class="wrap">
+                        <h3 class="hidden-lg">Свадьбы: </h3>
                         <div class="carousel">
                             <div class="pic"><img src="img/services/wedding/wedd_3.jpg" alt=""></div>
                             <div class="pic"><img src="img/services/wedding/wedd_1.jpg" alt=""></div>
@@ -76,7 +78,7 @@
                             <div class="pic"><img src="img/services/wedding/wedd_15.jpg" alt=""></div>
                         </div>
                         <div class="txt">
-                            <h3>Свадьбы</h3>
+                            <h3 class="hidden-md">Свадьбы</h3>
                             <p>Мы проводим Свадьбы по индивидуальному сценарию и создаем музыкальное сопровождение к нему.
                                 Широкий праздник со спецэффектами или семейный уют — мы сделаем всё,
                                 чтобы об этом дне у Вас остались только тёплые воспоминания!</p>
@@ -90,7 +92,7 @@
                     </div>
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-md-12">
                                 <div class="carousel hidden">
                                     <div class="pic-open"><img src="img/services/wedding/wedd_3.jpg" alt=""></div>
                                     <div class="pic-open"><img src="img/services/wedding/wedd_1.jpg" alt=""></div>
@@ -115,36 +117,38 @@
                     </div>
 
                     <div id="birth-service" class="wrap">
+                        <h3 class="hidden-lg">Юбилеи и Дни рождения</h3>
+                        <div class="carousel">
+                            <div class="pic"><img src="img/services/wedding/wedd_3.jpg" alt=""></div>
+                            <div class="pic"><img src="img/services/wedding/wedd_1.jpg" alt=""></div>
+                            <div class="pic"><img src="img/services/wedding/wedd_2.jpg" alt=""></div>
+                            <div class="pic"><img src="img/services/wedding/wedd_4.jpg" alt=""></div>
+                            <div class="pic"><img src="img/services/wedding/wedd_5.jpg" alt=""></div>
+                            <div class="pic"><img src="img/services/wedding/wedd_6.jpg" alt=""></div>
+                            <div class="pic"><img src="img/services/wedding/wedd_7.jpg" alt=""></div>
+                            <div class="pic"><img src="img/services/wedding/wedd_8.jpg" alt=""></div>
+                            <div class="pic"><img src="img/services/wedding/wedd_9.jpg" alt=""></div>
+                            <div class="pic"><img src="img/services/wedding/wedd_10.jpg" alt=""></div>
+                            <div class="pic"><img src="img/services/wedding/wedd_11.jpg" alt=""></div>
+                            <div class="pic"><img src="img/services/wedding/wedd_13.jpg" alt=""></div>
+                            <div class="pic"><img src="img/services/wedding/wedd_12.jpg" alt=""></div>
+                            <div class="pic"><img src="img/services/wedding/wedd_14.jpg" alt=""></div>
+                            <div class="pic"><img src="img/services/wedding/wedd_15.jpg" alt=""></div>
+                        </div>
                         <div class="txt">
-                            <h3>Юбилеи и Дни рождения</h3>
+                            <h3 class="hidden-md">Юбилеи и Дни рождения</h3>
                             <p>Мы знаем, что на Юбилеях главное — создать атмосферу Семейного уюта, и, в то же время,
-                            по-настоящему объединить все поколения. Мы гарантируем: </p>
+                                по-настоящему объединить все поколения. Мы гарантируем: </p>
                             <ul>
                                 <li><i class="fas fa-birthday-cake"></i>Индивидуальный подход к каждой дате: <br> от Года и до 100 лет</li>
                                 <li><i class="fas fa-birthday-cake"></i>Атмосферу тёплого семейного вечера <br> в кругу родных и близких</li>
                                 <li><i class="fas fa-birthday-cake"></i>Комфорт для <strong>каждого</strong> <br> гостя на время нашей работы</li>
                             </ul>
                         </div>
-                        <div class="carousel">
-                            <div class="pic"><img src="img/services/wedding/wedd_3.jpg" alt=""></div>
-                            <div class="pic"><img src="img/services/wedding/wedd_1.jpg" alt=""></div>
-                            <div class="pic"><img src="img/services/wedding/wedd_2.jpg" alt=""></div>
-                            <div class="pic"><img src="img/services/wedding/wedd_4.jpg" alt=""></div>
-                            <div class="pic"><img src="img/services/wedding/wedd_5.jpg" alt=""></div>
-                            <div class="pic"><img src="img/services/wedding/wedd_6.jpg" alt=""></div>
-                            <div class="pic"><img src="img/services/wedding/wedd_7.jpg" alt=""></div>
-                            <div class="pic"><img src="img/services/wedding/wedd_8.jpg" alt=""></div>
-                            <div class="pic"><img src="img/services/wedding/wedd_9.jpg" alt=""></div>
-                            <div class="pic"><img src="img/services/wedding/wedd_10.jpg" alt=""></div>
-                            <div class="pic"><img src="img/services/wedding/wedd_11.jpg" alt=""></div>
-                            <div class="pic"><img src="img/services/wedding/wedd_13.jpg" alt=""></div>
-                            <div class="pic"><img src="img/services/wedding/wedd_12.jpg" alt=""></div>
-                            <div class="pic"><img src="img/services/wedding/wedd_14.jpg" alt=""></div>
-                            <div class="pic"><img src="img/services/wedding/wedd_15.jpg" alt=""></div>
-                        </div>
                     </div>
 
                     <div id="corporative-service" class="wrap">
+                        <h3 class="hidden-lg">Корпоративы</h3>
                         <div class="carousel">
                             <div class="pic"><img src="img/services/wedding/wedd_3.jpg" alt=""></div>
                             <div class="pic"><img src="img/services/wedding/wedd_1.jpg" alt=""></div>
@@ -163,7 +167,7 @@
                             <div class="pic"><img src="img/services/wedding/wedd_15.jpg" alt=""></div>
                         </div>
                         <div class="txt">
-                            <h3>Корпоративы</h3>
+                            <h3 class="hidden-md">Корпоративы</h3>
                             <p>От Дня рождения компании до тематических вечеринок и праздников — мероприятие пройдёт
                             культурно и весело. Никто не уйдёт с плохим настроением!</p>
                             <ul>
@@ -181,27 +185,27 @@
     <div class="add-services">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xs-12 col-sm-12 col-md-12">
                     <h2>Дополнительные услуги:</h2>
                 </div>
-                <div class="col-lg-4">
-                    <div class="wrap in-bottom">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="wrap add-serv">
                         <div class="pic"></div>
                         <div class="pic-bg"></div>
                         <h3>Холодный дым</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur culpa, doloremque, earum excepturi expedita, fuga id itaque iure minima nemo non numquam placeat porro ratione veritatis voluptatibus? Consectetur, itaque.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="wrap in-bottom">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="wrap add-serv">
                         <div class="pic"></div>
                         <div class="pic-bg"></div>
                         <h3>Выездная церемония</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur culpa, doloremque, earum excepturi expedita, fuga id itaque iure minima nemo non numquam placeat porro ratione veritatis voluptatibus? Consectetur, itaque.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="wrap in-bottom">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="wrap add-serv">
                         <div class="pic"></div>
                         <div class="pic-bg"></div>
                         <h3>Тяжелые огни</h3>
@@ -216,10 +220,10 @@
         <div class="container">
             <div class="row">
                 <!--<h2>А теперь немного о нас:</h2>-->
-                <div class="col-lg-6">
+                <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="photo"></div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="txt">
                         <h3>Ольга Сиржук</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam hic nesciunt soluta ullam. Dolorum laborum laudantium obcaecati voluptates? Esse est expedita explicabo facere ipsam magni numquam sunt tempore. Dolorem!</p>
@@ -235,7 +239,7 @@
     <div class="stats">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-sm-12 col-md-3">
                     <div class="scene">
                         <div class="card">
                             <div class="card-front"></div>
@@ -243,7 +247,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-12 col-md-3">
                     <div class="scene">
                         <div class="card">
                             <div class="card-front"></div>
@@ -251,7 +255,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-12 col-md-3">
                     <div class="scene">
                         <div class="card">
                             <div class="card-front"></div>
@@ -259,7 +263,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-12 col-md-3">
                     <div class="scene">
                         <div class="card">
                             <div class="card-front"></div>
@@ -274,10 +278,10 @@
     <div id="about-alex" class="about alex">
         <div class="container">
             <div class="row">
-                <div class="offset-lg-6 col-lg-6">
+                <div class="col-sm-6 offset-sm-6 col-md-6">
                     <div class="photo"></div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-sm-6 col-md-6">
                     <div class="txt">
                         <h3>Ольга Сиржук</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam hic nesciunt soluta ullam. Dolorum laborum laudantium obcaecati voluptates? Esse est expedita explicabo facere ipsam magni numquam sunt tempore. Dolorem!</p>
@@ -293,7 +297,7 @@
     <div class="stats">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-sm-12 col-md-3">
                     <div class="scene">
                         <div class="card">
                             <div class="card-front alex-main"></div>
@@ -301,7 +305,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-12 col-md-3">
                     <div class="scene">
                         <div class="card">
                             <div class="card-front"></div>
@@ -309,7 +313,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-12 col-md-3">
                     <div class="scene">
                         <div class="card">
                             <div class="card-front"></div>
@@ -317,7 +321,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-12 col-md-3">
                     <div class="scene">
                         <div class="card">
                             <div class="card-front"></div>
@@ -332,27 +336,25 @@
     <footer id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="wrap olga">
                         <h3>Ольга Сиржук</h3>
                         <a>+8 (800) 555 3535</a>
                         <a>+8 (800) 555 3535</a>
                         <a>+8 (800) 555 3535</a>
                         <i class="fab fa-instagram"></i>
-                        <!--<a class="instagram"><img src="/img/instagram.png" alt=""></a>-->
                     </div>
                 </div>
-                <div class="col lg-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="logo"></div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="wrap alex">
                         <h3>Александр Сиржук</h3>
                         <a>+8 (800) 555 3535</a>
                         <a>+8 (800) 555 3535</a>
                         <a>+8 (800) 555 3535</a>
                         <i class="fab fa-instagram"></i>
-                        <!--<a class="instagram"></a>-->
                     </div>
                 </div>
             </div>

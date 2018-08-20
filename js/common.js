@@ -18,11 +18,18 @@ $('nav li a').click(function () {
     $('html,body').animate({scrollTop:$($(this).attr('data-scroll-to')).offset().top},1000)
 });
 
+//menu toggle
+$('.burger').click(function () {
+    $('.menu').toggleClass('hidden');
+});
+$('.menu li a').click(function () {
+    $('.menu').toggleClass('hidden');
+});
 //fadeIn's at time
 let weddingServ = document.getElementById('wedding-service');
 let birthServ = document.getElementById('birth-service');
 let corporativeServ = document.getElementById('corporative-service');
-let addServ = document.getElementsByClassName('add-services')[0];
+let addServ = document.getElementsByClassName('add-serv');
 function getElementTopHeight(elem) {
     let box = elem.getBoundingClientRect();
     return box.top + pageYOffset;
@@ -44,8 +51,14 @@ function fadeInCurrent() {
     if (isInViewport(corporativeServ)) {
         corporativeServ.classList.add('in-left');
     }
-    if (isInViewport(addServ)) {
-        addServ.classList.add('in-bottom');
+    if (isInViewport(addServ[0])) {
+        addServ[0].classList.add('in-bottom');
+    }
+    if (isInViewport(addServ[1])) {
+        addServ[1].classList.add('in-bottom');
+    }
+    if (isInViewport(addServ[2])) {
+        addServ[2].classList.add('in-bottom');
     }
 }
 fadeInCurrent();
@@ -58,13 +71,14 @@ window.onscroll = function () {navColorChanger(), fadeInCurrent()};
 // let picBg = document.getElementsByClassName('pic-open-bg');
 
 
-
-$(".services .pic").click(function () {
-    $(".carousel").toggleClass('hidden')
-});
-$(".services .pic-open-bg").click(function () {
-    $(".carousel").toggleClass('hidden')
-});
+if ($(window).width() >= 992) {
+    $(".services .pic").click(function () {
+        $(".carousel").toggleClass('hidden')
+    });
+    $(".services .pic-open-bg").click(function () {
+        $(".carousel").toggleClass('hidden')
+    });
+}
 // picBg.onclick = function () {
 //     $(".carousel").toggleClass('hidden');
 // };

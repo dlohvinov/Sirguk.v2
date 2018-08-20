@@ -49,11 +49,420 @@
 
 
 @media only screen and (max-width: 992px) {
+    .hidden-lg {
+        display: block;
+    }
+    .hidden-md {
+        display: none;
+    }
+    .phone-and-burger {
+        text-align: right;
+    }
+    .burger {
+        display: inline-block;
+    }
+
+
+
+    nav .logo {
+        margin-top: 35px;
+        transform: scale(1.4,1.4);
+        text-align: left;
+    }
+    nav .phone {
+        font-size: 22px;
+    }
+    nav .menu {
+        position: absolute; left: 5%;
+        border-radius: 5px;
+        background: #fff;
+        transform: translateY(25px);
+    }
+    nav.scrolled .menu {
+        background: rgba(0,0,0,0.6);
+        border: 1px #fff solid;
+    }
+    nav .menu li a {
+        text-transform: uppercase;
+        width: 110px;
+        font-size: 14px;
+    }
+    nav .menu.hidden {
+        opacity: 0;
+        transform: translateY(-30px);
+        pointer-events: none;
+
+    }
+
+    .services .wrap  {
+      margin-bottom: 40px;
+    }
+    .services .wrap .pic {
+        width: 100% ; height: auto;
+        cursor: auto;
+    }
+    .services .pic img:hover {
+        transform: none;
+    }
+
+
+    /*small carousel*/
+    .services .wrap .carousel {
+        display: block;
+        margin: auto;
+        width: 75%; height: auto;
+    }
+    .services .wrap.in-right .carousel {
+        float: none;
+    }
+    .slick-prev, .slick-next {
+        transform: scale(2,2);
+    }
+    .slick-prev:hover, .slick-next:hover {
+        transform: scale(2.2,2.2);
+    }
+    .slick-prev {
+        left: -31px;
+    }
+    .slick-next {
+        right: -31px;
+    }
+    /*large carousel*/
+    .services .container-fluid .carousel {
+        display: none;
+    }
+
+
+    .services .wrap .txt {
+        display: block;
+        width: 90%;
+        margin: 20px 0 auto 20px;
+    }
+    .services h3 {
+        text-align: center;
+        font: 36px "RobotoSlabRegular";
+        margin-bottom: 20px;
+    }
+    .services .txt p {
+        font-size: 20px;
+        text-align: justify-all;
+    }
+    .services .txt ul {
+        display: block;
+        margin-left: 30px;
+    }
+    .services .txt li {
+        font-size: 16px;
+        font-style: italic;
+    }
+    .services .wrap.in-right {
+        text-align: left;
+    }
+    .services .wrap.in-right .txt {
+        margin: 20px 0 auto 40px;
+    }
+    .services .txt li {
+        margin-top: 5px;
+        padding-left: 25px;
+        position: relative;
+    }
+    .services .wrap.in-right .txt li {
+        margin-top: 10px;
+        padding-left: 25px;
+        padding-right: 0;
+    }
+
+
+
+
+
+    .add-services .wrap .pic {
+        display: block;
+        margin: auto;
+        width: 75%; height: 300px;
+    }
+    .add-services .wrap .pic-bg {
+        width: 60%; height: 340px;
+        transform: translate(-50%, -5%);
+    }
+    .add-services h3 {
+        margin-top: 35px;
+        text-align: center;
+        font-size: 32px;
+    }
+    .add-services p {
+        margin-bottom: 110px;
+        text-align: justify-all;
+    }
+
+
+
+    .about .photo {
+        position: absolute; top: 50px; left: 70px;
+        transform: translateX(-40%);
+    }
+    .about .txt {
+        width: auto;
+    }
+    .about .txt  p {
+        text-align: justify;
+    }
+    .about.alex .photo {
+        position: absolute; top: 50px; left: -60px;
+    }
+    .stats .scene {
+        width: 100%; height: 150px;
+    }
+    .stats .card .card-back {
+        padding-top: 0;
+        font-size: 16px;
+    }
+    .stats .card .card-back strong {
+        font: 60px "RobotoSlabBold";
+    }
+    .stats .col-md-3:nth-child(4) .card-back {
+        font-size: 15px;
+    }
+
+
+
+
+    footer .logo {
+        width: 500px; height: 320px;
+        background-size: cover;
+        margin: 15px auto;
+    }
+    footer .wrap {
+        width: auto;
+        margin: auto;
+        text-align: center;
+        padding: 40px;
+    }
+    footer .wrap h3 {
+        font-size: 32px;
+    }
+    footer .wrap a {
+        width: fit-content;
+        font-size: 22px;
+        margin: 10px auto;
+    }
+    footer .wrap a:hover, footer .wrap.alex a:hover  {
+        transform-origin: center center;
+    }
+    footer i {
+        font-size: 48px;
+    }
+    footer .alex h3 {
+         margin-left: 0;
+     }
+    footer .alex {
+        float: none;
+        text-align: center;
+    }
+
 }
 
 
 
 @media only screen and (max-width: 768px) {
+
+    h2 {
+        font-size: 32px;
+    }
+
+
+
+    nav .logo {
+        transform: scale(1.1,1.1);
+    }
+    nav .col-sm-12 {
+        position: relative;
+    }
+    nav .menu {
+        top: 60px;
+        right: -47%;
+        width: 50%;
+    }
+    nav.scrolled .menu {
+        border: 1px #FFD700 solid;
+    }
+    nav .menu li {
+        display: block;
+        margin: 0;
+    }
+    nav .menu li a {
+        text-align: right;
+        width: 100%;
+        padding-right: 30px;
+        font-family: 'RobotoSlabBold', sans-serif;
+        border-bottom: 1px solid #FFD700;
+    }
+    nav .phone {
+         font-size: 18px;
+    }
+
+
+
+
+    header {
+        height: 710px;
+    }
+    header:before {
+        width: 510px; height: 600px;
+    }
+    header .wrap {
+        margin: 190px auto 0;
+        text-align: center;
+        width: fit-content;
+        border-radius: 5px;
+    }
+    header .wrap h2{
+        font-size: 36px;
+    }
+    header .wrap h1 {
+        font-size: 28px;
+    }
+
+
+
+
+    .services .wrap  {
+        margin-bottom: 30px;
+    }
+
+
+    /*small carousel*/
+    .slick-prev, .slick-next {
+        transform: scale(1.7,1.7);
+    }
+    .slick-prev:hover, .slick-next:hover {
+        transform: scale(1.9,1.9);
+    }
+    .slick-prev {
+        left: -35px;
+    }
+    .slick-next {
+        right: -35px;
+    }
+
+
+    .services h3 {
+        font-size: 32px;
+    }
+    .services .txt p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .services .txt ul {
+        margin-left: 50px;
+    }
+    .services .txt li {
+        font-size: 14px;
+    }
+
+
+
+
+    .add-services .wrap .pic {
+        width: 75%; height: 230px;
+    }
+    .add-services .wrap .pic-bg {
+        width: 65%; height: 270px;
+        transform: translate(-50%, -7%);
+    }
+    .add-services h3 {
+        text-align: center;
+        font-size: 26px;
+    }
+    .add-services p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+
+    .about .photo {
+        width: 500px; height: 800px;
+    }
+    .about.alex .photo {
+        position: absolute; top: 50px; left: -100px;
+    }
+    .about .wrap-background {
+        width: 290px; height: 750px;
+        transform: rotate(0) translate(83%, -15%);
+    }
+    .about.alex .wrap-background {
+        transform: rotate(0) translate(-83%, -15%);
+    }
+    .about .txt h3 {
+        text-align: center;
+    }
+    .about .txt p {
+        font-size: 14px;
+    }
+
+
+
+
+    .stats {
+        padding-top: 0;
+        background: #fff;
+    }
+    .stats .card.flipped {
+        transform: none;
+    }
+    .stats .card .card-front {
+        display: none;
+    }
+    .stats .scene {
+        margin-top: 60px;
+        /*border-color: #efefef;*/
+        border: none;
+    }
+
+
+    .stats .card .card-back {
+        padding-top: 10px;
+        transform: none;
+        text-transform: uppercase;
+        background: #fff;
+        color: #000;
+    }
+    .stats .card .card-back strong {
+        display: block;
+        -webkit-text-stroke: 0.5px rgba(0,0,0,1);
+        color: #fff;
+        text-shadow: none;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    .stats .card .card-back:before {
+        content: '';
+        background: url("../img/medal1.png");
+        background-size: contain;
+        width: 170px; height: 170px;
+        position: absolute; top: -20px; left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+    }
+
+
+
+
+
+    footer .logo {
+        width: 400px; height: 260px;
+        margin: 0 auto;
+    }
+    footer .wrap h3 {
+        font-size: 28px;
+    }
+    footer .wrap a {
+        font-size: 19px;
+    }
+    footer i {
+        font-size: 36px;
+    }
 
 }
 
@@ -61,6 +470,199 @@
 
 @media only screen and (max-width: 576px) {
 
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+
+
+    nav .logo {
+        transform: scale(1.1,1.1);
+        margin-top: 30px;
+    }
+    nav .menu {
+        left: 10px; right: 10px;
+        width: auto;
+    }
+    nav .menu li a {
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 0;
+    }
+    nav .phone {
+        font-size: 18px;
+    }
+    .burger {
+        margin-left: 5px;
+        font-size: 18px;
+    }
+
+
+
+
+    header {
+        height: 100vh;
+    }
+    header:before {
+        width: 320px; height: 400px;
+    }
+    header .wrap {
+        margin: 100px auto 0;
+    }
+    header .wrap h2 {
+        font-size: 28px;
+    }
+    header .wrap h1 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+
+
+
+    .services  {
+        padding: 50px 0;
+    }
+    .services .wrap  {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+
+    /*small carousel*/
+    .services .wrap .carousel {
+        width: 95%;
+    }
+    .slick-prev, .slick-next {
+        transform: scale(1,1);
+    }
+    .slick-prev:hover, .slick-next:hover {
+        transform: scale(1.2,1.2);
+    }
+    .slick-prev {
+        left: -23px;
+    }
+    .slick-next {
+        right: -23px;
+    }
+
+
+    .services h3 {
+        font-size: 24px;
+    }
+    .services #birth-service h3 {
+        font-size: 20px;
+    }
+    .services .wrap.in-right .txt {
+         margin: 20px auto auto;
+     }
+    .services .txt p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+
+
+
+    .add-services {
+        padding: 50px 0 30px;
+    }
+    .add-services .wrap .pic {
+        width: 100%; height: 50vh;
+        background-position: center bottom;
+    }
+    .add-services .wrap .pic-bg {
+        width: 70%; height: 56vh;
+        transform: translate(-50%, -5%);
+    }
+    .add-services h3 {
+        text-align: center;
+        font-size: 24px;
+    }
+    .add-services p {
+        font-size: 16px;
+        text-align: justify;
+        margin-bottom: 60px;
+    }
+
+
+
+    .about {
+        height: auto;
+        padding: 90px 0 130px;
+    }
+    .about .photo {
+        display: none;
+        /*width: 320px; height: 600px;*/
+    }
+    .about .wrap-background {
+        width: 110%; height: 110%;
+        transform: rotate(90deg) translate(0, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .about.alex .wrap-background {
+        left: auto;
+        right: 0;
+        transform: rotate(0) translate(0, 0);
+    }
+    .about .txt h3 {
+        /*color: #fff;*/
+        text-align: center;
+    }
+    .about .txt p {
+        /*color: #fff;*/
+        font-size: 14px;
+    }
+
+
+
+
+    .stats {
+        /*background: rgba(0,0,0,1);*/
+        background: #eee;
+        padding: 30px 0;
+        box-shadow: rgba(0,0,0,0.5) 3px 0 15px;
+    }
+    .stats .scene {
+        margin: 25px 0;
+        border-bottom: 1px solid #FFD700;
+    }
+
+
+    .stats .card .card-back strong {
+        font-size: 48px;
+        margin: -10px 0 30px;
+    }
+    .stats .card .card-back:before {
+        width: 120px; height: 120px;
+        position: absolute; top: -15px;
+    }
+
+
+
+
+    footer {
+        padding: 30px 0 0;
+    }
+    footer .logo {
+        width: 300px; height: 180px;
+    }
+    footer .wrap {
+        padding: 20px;
+    }
+    footer .wrap h3 {
+        font-size: 24px;
+    }
+    footer .wrap a {
+        font-size: 16px;
+    }
+    footer i {
+        font-size: 32px;
+    }
 }
 
 
