@@ -404,9 +404,10 @@
 
 
 
+
     .stats {
-        padding-top: 0;
-        background: #fff;
+        padding: 30px 0;
+        background: #eee;
     }
     .stats .card.flipped {
         transform: none;
@@ -415,9 +416,10 @@
         display: none;
     }
     .stats .scene {
-        margin-top: 60px;
-        /*border-color: #efefef;*/
+        margin-top: 80px;
         border: none;
+        border-bottom: 3px solid #FFD700;
+        box-shadow: rgba(0,0,0,0.2) 3px 0 15px;
     }
 
 
@@ -434,14 +436,14 @@
         color: #fff;
         text-shadow: none;
         position: relative;
-        margin-bottom: 40px;
+        margin: -30px 0 30px;
     }
     .stats .card .card-back:before {
         content: '';
         background: url("../img/medal1.png");
         background-size: contain;
         width: 170px; height: 170px;
-        position: absolute; top: -20px; left: 50%;
+        position: absolute; top: -60px; left: 50%;
         transform: translateX(-50%);
         z-index: 0;
     }
@@ -503,13 +505,15 @@
 
 
     header {
-        height: 100vh;
+        height: 600px;
+        position: relative;
     }
     header:before {
         width: 320px; height: 400px;
     }
     header .wrap {
-        margin: 100px auto 0;
+        position: absolute; top: -30px; left: 50%;
+        transform: translateX(-50%);
     }
     header .wrap h2 {
         font-size: 28px;
@@ -622,14 +626,10 @@
 
 
     .stats {
-        /*background: rgba(0,0,0,1);*/
-        background: #eee;
         padding: 30px 0;
-        box-shadow: rgba(0,0,0,0.5) 3px 0 15px;
     }
     .stats .scene {
         margin: 25px 0;
-        border-bottom: 1px solid #FFD700;
     }
 
 
