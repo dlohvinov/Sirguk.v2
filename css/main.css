@@ -476,7 +476,7 @@ header .wrap h1 {
 .stats .card .card-back {
     padding-top: 20px;
     background: #efefef;
-    /*transform: rotateY(180deg);*/
+    transform: rotateY(180deg);
     text-align: center;
     vertical-align: 50%;
     font: 20px "RobotoSlabRegular";
@@ -519,6 +519,106 @@ header .wrap h1 {
 .stats .card .alex-main.card-front {
     background: url("../img/statistics/main2-thin.png") no-repeat;
     background-size: contain;
+}
+
+
+
+.feedback {
+    padding: 70px 0;
+    height: 800px;
+    position: relative;
+}
+.feedback .col-md-12 {
+    padding: 0;
+}
+.feedback .wrap {
+    background: url("../img/mobile2.png") no-repeat;
+    background-size: contain;
+    height: 490px; width: 250px;
+    position: absolute; top:115px; left: calc(50% + 4px);
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 90;
+}
+.feedback .carousel {
+    margin-top: 128px;
+    position: relative;
+}
+.feedback .carousel:before {
+    content: '';
+    position: absolute; top: 37px; bottom: 37px; left: 0; right: 0;
+    background: rgba(250, 215, 0, 0.5);
+}
+.feedback .carousel .item {
+    width: 211px; height: 375px;
+    margin: 0 20px;
+    transform: scale(0.8,0.8);
+    transition: 0.3s;
+    position: relative;
+    outline: none;
+}
+.feedback .carousel .item a {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 5px;
+    position: absolute; bottom: 0; left: 0; right: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    height: 30px;
+    color: #fff;
+    background: #000;
+    opacity: 0;
+    z-index: 95;
+    transition: 0.4s;
+}
+.feedback .carousel .item a:hover {
+    color: #000;
+    background: #fff;
+    box-shadow: rgba(0,0,0,0.3) 3px 0 15px;
+}
+.feedback .carousel .slick-center {
+    transform: scale(1,1);
+    transform-origin: center center;
+}
+.feedback .carousel .slick-center a {
+    transform: scaleY(1);
+    opacity: 1;
+}
+.feedback .carousel .item-fill {
+    content: '';
+    position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+    background: rgba(250, 215, 0, 0.5);
+    cursor: pointer;
+    z-index: 94;
+    transition: 0.2s;
+}
+.feedback .carousel .item-fill:hover, .slick-center .item-fill {
+    opacity: 0;
+}
+
+.feedback .carousel img {
+    margin: auto;
+    height: 100%;
+}
+
+
+
+
+.feedback .slick-prev:before, .slick-next:before {
+    color: #000;
+}
+.feedback .slick-prev, .slick-next {
+    transform: scale(2,2);
+    z-index: 95;
+}
+.feedback .slick-prev:hover, .slick-next:hover {
+    transform: scale(2.5,2.5);
+}
+.feedback .slick-prev {
+    left: 38%;
+}
+.feedback .slick-next {
+    right: 38%;
 }
 
 
