@@ -240,21 +240,21 @@ header .wrap h1 {
 .services .wrap.in-right .carousel {
     float: right;
 }
-.slick-prev:before, .slick-next:before {
+.services .slick-prev:before, .slick-next:before {
     color: #FFD700;
     transition: 0.2s;
 }
-.slick-prev, .slick-next {
+.services .slick-prev, .slick-next {
     transform: scale(1.3,1.3);
     transition: 0.2s;
 }
-.slick-prev:hover, .slick-next:hover {
+.services .slick-prev:hover, .slick-next:hover {
     transform: scale(1.5,1.5);
 }
-.slick-prev {
+.services .slick-prev {
     left: -30px;
 }
-.slick-next {
+.services .slick-next {
     right: -30px;
 }
 
@@ -535,7 +535,7 @@ header .wrap h1 {
     background: url("../img/mobile2.png") no-repeat;
     background-size: contain;
     height: 490px; width: 250px;
-    position: absolute; top:115px; left: calc(50% + 4px);
+    position: absolute; top: 115px; left: calc(50% + 4px);
     transform: translateX(-50%);
     pointer-events: none;
     z-index: 90;
@@ -550,7 +550,7 @@ header .wrap h1 {
     background: rgba(250, 215, 0, 0.5);
 }
 .feedback .carousel .item {
-    width: 211px; height: 375px;
+    height: 375px;
     margin: 0 20px;
     transform: scale(0.8,0.8);
     transition: 0.3s;
@@ -561,15 +561,17 @@ header .wrap h1 {
     text-align: center;
     font-size: 12px;
     padding-top: 5px;
-    position: absolute; bottom: 0; left: 0; right: 0;
-    transform: scaleY(0);
+    width: 211px;
+    position: absolute; bottom: 0; left: 0;
+    transform: translateY(100%);
     transform-origin: bottom;
     height: 30px;
     color: #fff;
     background: #000;
+    border-radius: 2px;
     opacity: 0;
     z-index: 95;
-    transition: 0.4s;
+    transition: 0.35s ease-in-out;
 }
 .feedback .carousel .item a:hover {
     color: #000;
@@ -581,7 +583,7 @@ header .wrap h1 {
     transform-origin: center center;
 }
 .feedback .carousel .slick-center a {
-    transform: scaleY(1);
+    transform: translateY(0);
     opacity: 1;
 }
 .feedback .carousel .item-fill {
@@ -604,21 +606,21 @@ header .wrap h1 {
 
 
 
-.feedback .slick-prev:before, .slick-next:before {
+.feedback .slick-prev:before,.feedback .slick-next:before {
     color: #000;
 }
-.feedback .slick-prev, .slick-next {
+.feedback .slick-prev,.feedback .slick-next {
     transform: scale(2,2);
     z-index: 95;
 }
-.feedback .slick-prev:hover, .slick-next:hover {
+.feedback .slick-prev:hover,.feedback .slick-next:hover {
     transform: scale(2.5,2.5);
 }
 .feedback .slick-prev {
-    left: 38%;
+    left: calc(50% - 155px);
 }
 .feedback .slick-next {
-    right: 38%;
+    right: calc(50% - 155px);
 }
 
 

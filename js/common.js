@@ -94,6 +94,7 @@ $('.stats .card').click(function () {
 $(document).ready(function(){
     $('.services .carousel').slick({
         infinite: true,
+        lazyLoad: 'ondemand'
         // autoplay: 2,
     });
 });
@@ -102,10 +103,18 @@ $(document).ready(function(){
         infinite: true,
         centerMode: true,
         centerPadding: 0,
-        // variableWidth: true,
-        // variableHeight: true,
+        variableWidth: true,
         slidesToShow: 5,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        // responsive: [
+        //     {
+        //         breakpoint: 768,
+        //         settings: {
+        //             slidesToShow: 1,
+        //             slidesToScroll: 3,
+        //         }
+        //     }
+        // ],
     });
 });
 $('.feedback .item').click(function () {
