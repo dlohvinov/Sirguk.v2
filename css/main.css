@@ -20,10 +20,8 @@ a:hover {
     text-decoration: none;
 }
 .logo {
-    background: url("../img/logo.png") no-repeat;
-    background-size: contain;
     width: 105px; height: 26px;
-    display: inline-block;
+    display: block;
     margin-top: 28px;
     cursor: pointer;
 }
@@ -34,9 +32,9 @@ a:hover {
 nav {
     background: #fff;
     position: fixed; top: 0; left: 0; right: 0;
-    height: 79px;
-    z-index: 100;
+    height: 76px;
     color: #fff;
+    z-index: 100;
     transition: 0.2s;
 }
 nav:before {
@@ -48,14 +46,17 @@ nav:before {
     transition: 0.2s;
 }
 nav.scrolled {
+    height: 79px;
     background: transparent;
     border-bottom: 3px #FFD700 solid;
 }
 nav.scrolled:before {
     transform: translateY(0);
 }
+
 nav .logo.black {
-    opacity: 1;
+    background: url("../img/logo.png") no-repeat;
+    background-size: contain;
     position: absolute;
 }
 nav .logo.white {
@@ -71,19 +72,14 @@ nav.scrolled .logo.white {
     opacity: 1;
 }
 
-
 nav .menu {
     text-align: center;
     margin: 0 auto;
     padding: 0;
     transition: 0.3s;
 }
-nav .menu.hidden {
-    display: block;
-}
 nav .menu li {
     display: inline-block;
-    text-decoration: none;
     position: relative;
     margin: 0 7px;
 }
@@ -97,7 +93,14 @@ nav .menu li a {
     transition: 0.3s;
     z-index: 10;
 }
+nav.scrolled .menu li a {
+    color: #fff;
+}
+nav.scrolled .menu li a:hover {
+    color: #000;
+}
 
+/*yellow hover*/
 nav .menu li a:before, a:after {
     content: '';
     background: #FFD700;
@@ -109,11 +112,6 @@ nav .menu li a:before, a:after {
     transition: 0.3s;
     z-index: -1;
 }
-nav .menu li a:after {
-    position: absolute; top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 nav .menu li a:hover {
     background: #FFD700;
     box-shadow: rgba(0,0,0,0.1) 3px 0 15px;
@@ -128,12 +126,7 @@ nav .menu a:hover:after {
     opacity: 1;
 }
 
-nav.scrolled .menu li a {
-    color: #fff;
-}
-nav.scrolled .menu li a:hover {
-    color: #000;
-}
+
 nav .phone {
     display: inline-block;
     margin-top: 30px;
@@ -161,9 +154,6 @@ nav.scrolled .burger {
     color: #fff;
     border: 1px #fff solid;
 }
-/*.burger:hover {*/
-    /*background: #FFD700;*/
-/*}*/
 
 
 
@@ -178,27 +168,26 @@ header {
 }
 header:before {
     content:'';
-    background: url("../img/header_photo.png");
-    background-size: cover;
     width: 600px; height: 700px;
-    z-index: 0;
     position: absolute; bottom: 0; left: 50%;
     transform: translateX(-50%);
+    background: url("../img/header_photo.png");
+    background-size: cover;
+    z-index: 0;
 }
 header .wrap {
+    color: #fff;
     margin: 190px auto 0;
     text-align: center;
     width: fit-content;
     border-radius: 5px;
 }
 header .wrap h2{
-    color: #fff;
     text-shadow: 1px 1px 1px #000;
     text-transform: none;
     font-size: 40px;
 }
 header .wrap h1 {
-    color: #fff;
     font: 36px 'RobotoSlabBold';
     text-transform: uppercase;
     text-shadow: 1px 1px 1px #000;
@@ -260,7 +249,7 @@ header .wrap h1 {
 
 /*large carousel*/
 .services .container-fluid .carousel {
-    width: 50%; height: auto;
+    width: 60%; height: auto;
     position: fixed; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
@@ -271,9 +260,6 @@ header .wrap h1 {
 .services .carousel.hidden {
     opacity: 0;
     pointer-events: none;
-}
-.services .pic-open {
-    width: auto; height: auto;
 }
 .services .pic-open-bg {
     width: 100%; height: 100%;
@@ -296,13 +282,11 @@ header .wrap h1 {
 .services .wrap.in-right, .wrap.in-left {
     opacity: 1;
 }
-.services .wrap.in-right {
-    text-align: right;
-}
 .services .wrap .txt {
     margin-left: 40px;
 }
 .services .wrap.in-right .txt {
+    text-align: right;
     margin-left: 0;
     margin-right: 40px;
 }
@@ -322,7 +306,6 @@ header .wrap h1 {
 }
 .services .wrap.in-right .txt li {
     margin-top: 10px;
-    margin-right: 40px;
     padding-left: 0;
     padding-right: 25px;
     position: relative;
@@ -335,7 +318,6 @@ header .wrap h1 {
 }
 .services .wrap.in-right .txt i {
     position: absolute; top: 30%; right: 0;
-    /*transform: translateY(-100%);*/
 }
 
 
@@ -380,7 +362,11 @@ header .wrap h1 {
     background-size: cover;
 }
 .add-services h3 {
+    text-align: center;
     margin: 60px 0 0;
+}
+.add-services p {
+    text-align: justify;
 }
 
 
@@ -409,6 +395,7 @@ header .wrap h1 {
     z-index: 10;
 }
 .about .txt h3 {
+    text-align: center;
     font-size: 28px;
 }
 .about .wrap-background {
@@ -438,7 +425,7 @@ header .wrap h1 {
     cursor: pointer;
     transform-style: preserve-3d;
     transform-origin: center 20%;
-    transition: transform 1s;
+    transition: 1s;
     background: #000;
 }
 .stats .card.flipped {
@@ -505,9 +492,8 @@ header .wrap h1 {
     transform: scale(-1, 1);
 }
 .about.alex .txt {
-    float: right;
-    text-align: right;
     position: relative;
+    margin-left: auto;
 }
 .about.alex .wrap-background {
     left: auto; right: -250px;
@@ -525,7 +511,6 @@ header .wrap h1 {
 
 .feedback {
     padding: 70px 0;
-    height: 800px;
     position: relative;
 }
 .feedback .col-md-12 {
@@ -535,13 +520,13 @@ header .wrap h1 {
     background: url("../img/mobile2.png") no-repeat;
     background-size: contain;
     height: 490px; width: 250px;
-    position: absolute; top: 115px; left: calc(50% + 4px);
+    position: absolute; top: 87px; left: calc(50% + 4px);
     transform: translateX(-50%);
     pointer-events: none;
     z-index: 90;
 }
 .feedback .carousel {
-    margin-top: 128px;
+    margin: 100px 0 90px;
     position: relative;
 }
 .feedback .carousel:before {
@@ -605,7 +590,6 @@ header .wrap h1 {
 
 
 
-
 .feedback .slick-prev:before,.feedback .slick-next:before {
     color: #000;
 }
@@ -625,12 +609,12 @@ header .wrap h1 {
 
 
 
+
 footer {
     padding: 50px 0 20px;
     background: #000;
 }
 footer .logo {
-    display: block;
     background: url("../img/logo_ai.png") no-repeat;
     background-size: contain;
     width: 100%; height: 100%;
@@ -677,13 +661,12 @@ footer i {
     color: #fff;
     font-size: 36px;
     margin: 10px 0 15px 10px;
+    cursor: pointer;
     transition: 0.2s;
 }
 footer i:hover {
     color: #FFD700;
     transform: scale(1.2,1.2);
-    margin: 10px 0 15px 10px;
-    cursor: pointer;
 }
 
 
@@ -734,10 +717,10 @@ footer i:hover {
 @keyframes fadeInLeft {
     from {
         opacity:0;
-        -webkit-transform: translatex(-2000px);
-        -moz-transform: translatex(-2000px);
-        -o-transform: translatex(-2000px);
-        transform: translatex(-2000px);
+        -webkit-transform: translatex(-400px);
+        -moz-transform: translatex(-400px);
+        -o-transform: translatex(-400px);
+        transform: translatex(-400px);
     }
     to {
         opacity:1;
@@ -802,10 +785,10 @@ footer i:hover {
 @keyframes fadeInRight {
     from {
         opacity:0;
-        -webkit-transform: translatex(100px);
-        -moz-transform: translatex(100px);
-        -o-transform: translatex(100px);
-        transform: translatex(100px);
+        -webkit-transform: translatex(400px);
+        -moz-transform: translatex(400px);
+        -o-transform: translatex(400px);
+        transform: translatex(400px);
     }
     to {
         opacity:1;

@@ -20,10 +20,10 @@ $('nav li a').click(function () {
 
 //menu toggle
 $('.burger').click(function () {
-    $('.menu').toggleClass('hidden');
+    $('.menu').toggleClass('hidden-md');
 });
 $('.menu li a').click(function () {
-    $('.menu').toggleClass('hidden');
+    $('.menu').toggleClass('hidden-md');
 });
 //fadeIn's at time
 let weddingServ = document.getElementById('wedding-service');
