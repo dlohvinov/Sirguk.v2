@@ -1,5 +1,6 @@
 body {
-    font-family: "RobotoRegular",sans-serif;
+    font-family: "Fregat",sans-serif;
+    font-size: 125%;
     margin: 0;
 }
 ul {
@@ -165,6 +166,7 @@ header {
     background: url("../img/header_bg1.jpg") no-repeat center center fixed;
     background-size: cover;
     position: relative;
+
 }
 header:before {
     content:'';
@@ -181,16 +183,29 @@ header .wrap {
     text-align: center;
     width: fit-content;
     border-radius: 5px;
+
 }
+/*header:after {*/
+    /*content: '';*/
+    /*background: url("../img/ribbon1.png") no-repeat;*/
+    /*background-size: contain;*/
+    /*width: 800px; height: 180px;*/
+    /*position: absolute; top: 360px; left: 50%;*/
+    /*transform: translateX(-50%);*/
+    /*z-index: 0;*/
+/*}*/
 header .wrap h2{
     text-shadow: 1px 1px 1px #000;
     text-transform: none;
     font-size: 40px;
+
+
 }
 header .wrap h1 {
     font: 36px 'RobotoSlabBold';
     text-transform: uppercase;
     text-shadow: 1px 1px 1px #000;
+
 }
 
 
@@ -252,7 +267,7 @@ header .wrap h1 {
     width: 60%; height: auto;
     position: fixed; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 100;
+    z-index: 1100;
     display: block;
     transition: 0.4s;
     opacity: 1;
@@ -265,7 +280,7 @@ header .wrap h1 {
     width: 100%; height: 100%;
     background: rgba(0,0,0,.6);
     position: fixed; top: 0; left: 0;
-    z-index: 90;
+    z-index: 1000;
 }
 .services .carousel.hidden + .pic-open-bg{
     display: none;
@@ -519,8 +534,8 @@ header .wrap h1 {
 .feedback .wrap {
     background: url("../img/mobile2.png") no-repeat;
     background-size: contain;
-    height: 490px; width: 250px;
-    position: absolute; top: 87px; left: calc(50% + 4px);
+    height: 655px; width: 500px;
+    position: absolute; top: 64px; left: calc(50% + 89px);
     transform: translateX(-50%);
     pointer-events: none;
     z-index: 90;
@@ -531,11 +546,11 @@ header .wrap h1 {
 }
 .feedback .carousel:before {
     content: '';
-    position: absolute; top: 37px; bottom: 37px; left: 0; right: 0;
+    position: absolute; top: 50px; bottom: 50px; left: 0; right: 0;
     background: rgba(250, 215, 0, 0.5);
 }
 .feedback .carousel .item {
-    height: 375px;
+    height: 500px;
     margin: 0 20px;
     transform: scale(0.8,0.8);
     transition: 0.3s;
@@ -544,13 +559,13 @@ header .wrap h1 {
 }
 .feedback .carousel .item a {
     text-align: center;
-    font-size: 12px;
+    font-size: 20px;
     padding-top: 5px;
-    width: 211px;
+    width: 281px;
     position: absolute; bottom: 0; left: 0;
     transform: translateY(100%);
     transform-origin: bottom;
-    height: 30px;
+    height: 38px;
     color: #fff;
     background: #000;
     border-radius: 2px;
@@ -594,17 +609,18 @@ header .wrap h1 {
     color: #000;
 }
 .feedback .slick-prev,.feedback .slick-next {
-    transform: scale(2,2);
+    transform: scale(2.6,2.6);
+    transition: 0.2s;
     z-index: 95;
 }
 .feedback .slick-prev:hover,.feedback .slick-next:hover {
-    transform: scale(2.5,2.5);
+    transform: scale(2.9,2.9);
 }
 .feedback .slick-prev {
-    left: calc(50% - 155px);
+    left: calc(50% - 200px);
 }
 .feedback .slick-next {
-    right: calc(50% - 155px);
+    right: calc(50% - 200px);
 }
 
 
